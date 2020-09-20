@@ -7,7 +7,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <meta name="description" content="Portfolio de Maxence Vérité" />
+    <meta name="author" content="Maxence Vérité" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -15,8 +16,24 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Maxence Vérité</title>
   </head>
@@ -26,9 +43,15 @@
       id="mainNav"
     >
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"
-          >Maxence Vérité</a
-        >
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <div class="title-animation">
+            <span class="title-first-part"> &lt; </span>
+            <span class="surprise">
+              <span class="title-second-part">Maxence Vérité /&gt; </span>
+            </span>
+          </div>
+        </a>
+
         <button
           class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
           type="button"
@@ -46,17 +69,33 @@
             <li class="nav-item mx-0 mx-lg-1">
               <a
                 class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#portfolio"
-                >Portfolio</a
+                href="#about"
+                >Qui-suis-je?</a
+              >
+            </li>
+
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#techs"
+                >Technos</a
               >
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a
                 class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#about"
-                >About</a
+                href="#techs"
+                >Parcours</a
               >
             </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#portfolio"
+                >Projets
+              </a>
+            </li>
+
             <li class="nav-item mx-0 mx-lg-1">
               <a
                 class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
@@ -70,31 +109,122 @@
     </nav>
 
     <!-- Self Description Header-->
-    <header class="masthead bg-primary text-white text-center">
+    <header class="masthead bg-primary gradient text-white text-center">
       <div class="container d-flex align-items-center flex-column">
-        <img
-          class="masthead-avatar mb-5"
-          src="assets/img/avataaars.svg"
-          alt=""
-        />
+        <img class="masthead-avatar mb-5" src="img/avatar.png" alt="" />
 
         <h1 class="masthead-heading text-uppercase mb-0">Maxence Verite</h1>
+        <h4 class="words-carousel">
+          <span>Développeur</span>
+          <div>
+            <ul class="flip4">
+              <li>Passionné</li>
+              <li>Déterminé</li>
+              <li>Curieux</li>
+              <li>Web</li>
+            </ul>
+          </div>
+        </h4>
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+        </div>
+      </div>
+    </header>
 
+    <section class="page-section mb-0" id="about">
+      <div class="container">
+        <!-- About Section Heading-->
+        <h2
+          class="page-section-heading text-center text-uppercase text-secondary"
+        >
+          Qui-suis-je?
+        </h2>
+        <!-- Icon Divider-->
         <div class="divider-custom divider-light">
           <div class="divider-custom-line"></div>
           <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
           <div class="divider-custom-line"></div>
         </div>
-
-        <p class="masthead-subheading font-weight-light mb-0"></p>
+        <!-- About Section Content-->
+        <div class="row">
+          <div class="col-lg-4 ml-auto">
+            <p class="lead">
+              Freelancer is a free bootstrap theme created by Start Bootstrap.
+              The download includes the complete source files including HTML,
+              CSS, and JavaScript as well as optional SASS stylesheets for easy
+              customization.
+            </p>
+          </div>
+          <div class="col-lg-4 mr-auto">
+            <p class="lead">
+              You can create your own custom avatar for the masthead, change the
+              icon in the dividers, and add your email address to the contact
+              form to make it fully functional!
+            </p>
+          </div>
+        </div>
+        <!-- About Section Button-->
+        <div class="text-center mt-4">
+          <a
+            class="btn btn-xl btn-outline-light"
+            href="https://startbootstrap.com/themes/freelancer/"
+          >
+            <i class="fas fa-download mr-2"></i>
+            Free Download!
+          </a>
+        </div>
       </div>
-    </header>
-
-    <section class="page-section portfolio" id="portfolio">
+    </section>
+    <!-- Mes outils -->
+    <section class="page-section mb-0 bg-primary" id="techs">
       <div class="container">
-        <!-- Portfolio Section Heading-->
         <h2
-          class="page-section-heading text-center text-uppercase text-secondary mb-0"
+          class="page-section-heading text-center text-uppercase text-secondary"
+        >
+          Mes technos
+        </h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
+        <div class="row">
+          <div class="col-lg-4 ml-auto">
+            <p class="lead">
+              Freelancer is a free bootstrap theme created by Start Bootstrap.
+              The download includes the complete source files including HTML,
+              CSS, and JavaScript as well as optional SASS stylesheets for easy
+              customization.
+            </p>
+          </div>
+          <div class="col-lg-4 mr-auto">
+            <p class="lead">
+              You can create your own custom avatar for the masthead, change the
+              icon in the dividers, and add your email address to the contact
+              form to make it fully functional!
+            </p>
+          </div>
+        </div>
+        <!-- About Section Button-->
+        <div class="text-center mt-4">
+          <a
+            class="btn btn-xl btn-outline-light"
+            href="https://startbootstrap.com/themes/freelancer/"
+          >
+            <i class="fas fa-download mr-2"></i>
+            Free Download!
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section portfolio bg-primary" id="portfolio">
+      <div class="container">
+        <!-- Portfolio Header-->
+        <h2
+          class="page-section-heading text-center text-uppercase text-white mb-0"
         >
           Portfolio
         </h2>
@@ -104,9 +234,10 @@
           <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
           <div class="divider-custom-line"></div>
         </div>
-        <!-- Portfolio Grid Items-->
+
+        <!-- Portfolio Projects-->
         <div class="row">
-          <!-- Portfolio Item 1-->
+          <!-- Projet 1 -->
           <div class="col-md-6 col-lg-4 mb-5">
             <div
               class="portfolio-item mx-auto"
@@ -124,12 +255,12 @@
               </div>
               <img
                 class="img-fluid"
-                src="assets/img/portfolio/thumbnails/projet1.png"
+                src="img/portfolio/thumbnails/projet1.png"
                 alt=""
               />
             </div>
           </div>
-          <!-- Portfolio Item 2-->
+          <!-- Projet 2 -->
           <div class="col-md-6 col-lg-4 mb-5">
             <div
               class="portfolio-item mx-auto"
@@ -147,12 +278,12 @@
               </div>
               <img
                 class="img-fluid"
-                src="assets/img/portfolio/thumbnails/projet2.png"
+                src="img/portfolio/thumbnails/projet2.png"
                 alt=""
               />
             </div>
           </div>
-          <!-- Portfolio Item 3-->
+          <!-- Projet 3 -->
           <div class="col-md-6 col-lg-4 mb-5">
             <div
               class="portfolio-item mx-auto"
@@ -170,10 +301,109 @@
               </div>
               <img
                 class="img-fluid"
-                src="assets/img/portfolio/thumbnails/projet3.png"
+                src="img/portfolio/thumbnails/projet3.png"
                 alt=""
               />
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" id="contact">
+      <div class="container">
+        <!-- Contact Section Heading-->
+        <h2
+          class="page-section-heading text-center text-uppercase text-secondary mb-0"
+        >
+          Joignez-moi !
+        </h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Form-->
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+              <div class="control-group">
+                <div
+                  class="form-group floating-label-form-group controls mb-0 pb-2"
+                >
+                  <label>Nom</label>
+                  <input
+                    class="form-control"
+                    id="name"
+                    type="text"
+                    placeholder="Nom"
+                    required="required"
+                    data-validation-required-message="Entrez votre nom"
+                  />
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div
+                  class="form-group floating-label-form-group controls mb-0 pb-2"
+                >
+                  <label>Mail</label>
+                  <input
+                    class="form-control"
+                    id="email"
+                    type="email"
+                    placeholder="Mail"
+                    required="required"
+                    data-validation-required-message="Entrez votre mail"
+                  />
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div
+                  class="form-group floating-label-form-group controls mb-0 pb-2"
+                >
+                  <label>Phone</label>
+                  <input
+                    class="form-control"
+                    id="phone"
+                    type="tel"
+                    placeholder="Tel"
+                    required="required"
+                    data-validation-required-message="Entrez votre numéro de téléphone"
+                  />
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div
+                  class="form-group floating-label-form-group controls mb-0 pb-2"
+                >
+                  <label>Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    placeholder="Message"
+                    required="required"
+                    data-validation-required-message="Entrez votre message"
+                  ></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br />
+              <div id="success"></div>
+              <div class="form-group">
+                <button
+                  class="btn btn-primary btn-xl"
+                  id="sendMessageButton"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -222,8 +452,36 @@
       </div>
     </footer>
 
+    <!-- Social floating bar-->
+    <div id="floating-social">
+      <div class="social-icon text-primary">
+        <a
+          class="btn btn-outline-primary btn-social mx-1"
+          href="docs/cv.pdf"
+          download="CV-Maxence-Verite"
+          ><b>CV</b></a
+        >
+      </div>
+      <div class="social-icon">
+        <a
+          class="btn btn-outline-primary btn-social mx-1"
+          href="mailto:p.verite.maxence@gmail.com"
+          ><i class="fab fa fa-envelope"></i
+        ></a>
+      </div>
+      <div class="social-icon">
+        <a
+          class="btn btn-outline-primary btn-social mx-1"
+          href="https://www.linkedin.com/in/maxence-verite/"
+          ><i class="fab fa-fw fa-linkedin-in"></i
+        ></a>
+      </div>
+    </div>
+
     <div class="copyright py-4 text-center text-white">
-      <div class="container"><small>Maxence Vérité 2020 © </small></div>
+      <div class="container">
+        <small>Maxence Vérité 2020 © - StartBootstrap ©</small>
+      </div>
     </div>
 
     <script
@@ -241,5 +499,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   </body>
 </html>
