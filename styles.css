@@ -2114,8 +2114,7 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
-  background-color: #fdfffc;
+  color: #fdfffc;
   background-clip: padding-box;
   border: 0.125rem solid #ced4da;
   border-radius: 0.5rem;
@@ -10636,7 +10635,7 @@ a.text-dark:focus {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(1, 22, 39, 0.9);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
@@ -10646,6 +10645,9 @@ a.text-dark:focus {
   .portfolio-item-caption
   .portfolio-item-caption-content {
   font-size: 1.5rem;
+}
+
+.mail-hover:hover {
 }
 
 .portfolio-modal .portfolio-modal-title {
@@ -10669,12 +10671,30 @@ a.text-dark:focus {
   opacity: 1;
 }
 
+#contactForm {
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+#contactForm .form-control {
+  background-color: #011627;
+  padding-left: 10px !important;
+  border-radius: 10px;
+  color: #fdfffc;
+}
+
+#contactForm .form-control:focus {
+  caret-color: #e71d36;
+  background-color: #fdfffc;
+  color: #011627 !important;
+}
 .floating-label-form-group {
   position: relative;
   border-bottom: 1px solid #e9ecef;
 }
 .floating-label-form-group input,
 .floating-label-form-group textarea {
+  color: #fdfffc !important;
   font-size: 1.5em;
   position: relative;
   z-index: 1;
@@ -10687,7 +10707,7 @@ a.text-dark:focus {
   box-shadow: none !important;
 }
 .floating-label-form-group label {
-  font-size: 0.85em;
+  font-size: 0.9em;
   line-height: 1.764705882em;
   position: relative;
   z-index: 0;
@@ -10699,12 +10719,14 @@ a.text-dark:focus {
 }
 .floating-label-form-group:not(:first-child) {
   padding-left: 14px;
-  border-left: 1px solid #e9ecef;
+  border-left: 1px solid #ffffff;
 }
 
 .floating-label-form-group-with-value label {
   top: 0;
   opacity: 1;
+  font-weight: 800;
+  color: #ff9f1c;
 }
 
 .floating-label-form-group-with-focus label {

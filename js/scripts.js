@@ -28,6 +28,12 @@
     }
   });
 
+  //allow tooltips
+
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+
   // Scroll to top button appear
   $(document).scroll(function () {
     var scrollDistance = $(this).scrollTop();
