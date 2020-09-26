@@ -473,7 +473,7 @@
             download="CV-Maxence-Verite"
           >
             <i class="fas fa-download mr-2"></i>
-            Télécharge mon CV
+            Télécharger mon CV
           </a>
         </div>
       </div>
@@ -485,7 +485,7 @@
         <h2
           class="page-section-heading text-center text-uppercase text-white mb-0"
         >
-          Portfolio
+          Quelques conceptions
         </h2>
         <!-- Icon Divider-->
         <div class="divider-custom">
@@ -501,7 +501,7 @@
             <div
               class="portfolio-item mx-auto"
               data-toggle="modal"
-              data-target="#portfolioModal1"
+              data-target="#modalprojet1"
             >
               <div
                 class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
@@ -517,6 +517,27 @@
                 src="img/portfolio/thumbnails/project-mock-thumbnail.jpg"
                 alt=""
               />
+            </div>
+          </div>
+
+          <div class="modal fade" id="modalprojet1" tabindex="-1" role="dialog" aria-labelledby="modalProjet1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content bg-secondary text-white">
+                <div class="modal-header ">
+                  <div class="header-thumbnail"></div>
+                 
+                  <button type="button" data-dismiss="modal" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div><h1>But</h1></div>
+                  <div><h1>Technos</h1></div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary text-secondary"> Source <i class="fab fa-github"></i></button>              
+                </div>
+              </div>
             </div>
           </div>
           <!-- Projet 2 -->
@@ -675,9 +696,12 @@
           <div class="col-lg-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Location</h4>
             <p class="lead mb-0">
-              Mon adresse
-              <br />
-              Lille, France
+              <h5 class="text-white">Lille, France</h5>
+              <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.7176165848787!2d3.0901893783879624!3d50.63236239565342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d5fb90b31eb1%3A0xa2bae6e66a222b8e!2sRue%20Pierre%20Legrand%2C%20Lille!5e0!3m2!1sfr!2sfr!4v1601048824046!5m2!1sfr!2sfr" width="300" height="150" frameborder="0" style="border: 1px solid #ff9f1c" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+            
+              
             </p>
           </div>
           <!-- Footer Social Icons-->
@@ -699,12 +723,11 @@
           </div>
           <!-- Footer About Text-->
           <div class="col-lg-4">
-            <h4 class="text-uppercase mb-4">About Freelancer</h4>
+            <h4 class="text-uppercase mb-4">Merci pour ta visite  <i class="fas fa-thumbs-up"></i></h4>
             <p class="lead mb-0">
-              Freelance is a free to use, MIT licensed Bootstrap theme created
-              by
-              <a href="http://startbootstrap.com">Start Bootstrap</a>
-              .
+              S'il te manque malgré tous ça l'information cruciale qui pourrait nous amener à collaborer, 
+              n'hésite pas à venir dialoguer, c'est toujours un plaisir !
+             
             </p>
           </div>
         </div>
@@ -742,6 +765,9 @@
         <small>Maxence Vérité 2020 © - StartBootstrap ©</small>
       </div>
     </div>
+
+
+    
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
