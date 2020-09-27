@@ -70,7 +70,7 @@
               <a
                 class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                 href="#about"
-                >Qui-suis-je?</a
+                ><span class="pronom">Ma</span> présentation</a
               >
             </li>
 
@@ -78,21 +78,21 @@
               <a
                 class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                 href="#techs"
-                >Technos</a
+                ><span class="pronom">Mes</span> Technos</a
               >
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a
                 class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                 href="#parcours"
-                >Parcours</a
+                ><span class="pronom">Mon</span> Parcours</a
               >
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a
                 class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                 href="#portfolio"
-                >Projets
+                ><span class="pronom">Mes</span> Projets
               </a>
             </li>
 
@@ -100,11 +100,19 @@
               <a
                 class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                 href="#contact"
-                >Contact</a
+                ><span class="pronom">Me</span> Contacter</a
               >
             </li>
+          
           </ul>
+          <span
+          class="navbar-text text-white py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+          ><i class="blink fas fa-exclamation-triangle fa-2x"></i>
+          En Travaux</span
+        >
+         
         </div>
+       
       </div>
     </nav>
 
@@ -605,22 +613,34 @@
           </div>
 
           <div class="modal fade" id="modalprojet1" tabindex="-1" role="dialog" aria-labelledby="modalProjet1" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content bg-secondary text-white">
-                <div class="modal-header ">
-                  <div class="header-thumbnail"></div>
-                 
-                  <button type="button" data-dismiss="modal" class="close" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                <div class="card-container">
+                  <span class="close"><a  data-toggle="modal"
+                    data-target="#modalprojet1"><i class="fas fa-times-circle"></i></a></span>
+                  <div class="project-demo mb-3"></div>
+                  
+                  <h3>Facts Thrower <a href="https://github.com"><i class="fab fa-github"></i></a></h3>
+                  <h6>API</h6>
+                  <div class="scrollable-content mb-3 mt-3">
+                  <p>User interface designer and <br/> front-end developer User interface designer and <br/> front-end developerUser interface designer and <br/> front-end developerUser interface designer and <br/> front-end developerUser interface designer and <br/> front-end developerUser interface designer and <br/> front-end developerUser interface designer and <br/> front-end developer</p>
+                  </div>
+                
+                  <div class="skills text-secondary">
+                    <h6>Skills</h6>
+                    <ul>
+                      <li class="skill">API Design</li>
+                      <li class="tech">.NET CORE 3.1</li>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                      <li>React</li>
+                      <li>Node</li>
+                    </ul>
+                  </div>
+                  
                 </div>
-                <div class="modal-body">
-                  <div><h1>But</h1></div>
-                  <div><h1>Technos</h1></div>
-                </div>
-                <div class="modal-footer">
-                  <button class="btn btn-primary text-secondary"> Source <i class="fab fa-github"></i></button>              
-                </div>
+                
               </div>
             </div>
           </div>
@@ -629,7 +649,7 @@
             <div
               class="portfolio-item mx-auto"
               data-toggle="modal"
-              data-target="#portfolioModal2"
+              data-target="#modalprojet2"
             >
               <div
                 class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
@@ -647,12 +667,45 @@
               />
             </div>
           </div>
+
+          <div class="modal fade" id="modalprojet2" tabindex="-1" role="dialog" aria-labelledby="modalProjet1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content bg-secondary text-white">
+                <div class="card-container">
+                  <span class="close"><a  data-toggle="modal" data-target="#modalprojet2"
+                    ><i class="fas fa-times-circle"></i></a></span>
+                  <div class="project-demo mb-3"></div>
+                  
+                  <h3>Projet 2 <a href="https://github.com"><i class="fab fa-github"></i></a></h3>
+                  <h6>API</h6>
+                  <div class="scrollable-content mb-3 mt-3">
+                  <p>User interface designer and <br/> front-end developer User interface designer and <br/> front-end developerUser interface designer and <br/> front-end developerUser interface designer and <br/> front-end developerUser interface designer and <br/> front-end developerUser interface designer and <br/> front-end developerUser interface designer and <br/> front-end developer</p>
+                  </div>
+                
+                  <div class="skills text-secondary">
+                    <h6>Skills</h6>
+                    <ul>
+                      <li>UI / UX</li>
+                      <li>Front End Development</li>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                      <li>React</li>
+                      <li>Node</li>
+                    </ul>
+                  </div>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
           <!-- Projet 3 -->
           <div class="col-md-6 col-lg-4 mb-5">
             <div
               class="portfolio-item mx-auto"
               data-toggle="modal"
-              data-target="#portfolioModal3"
+              data-target="#modalprojet3"
             >
               <div
                 class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
@@ -668,6 +721,39 @@
                 src="img/portfolio/thumbnails/project-mock-thumbnail.jpg"
                 alt=""
               />
+            </div>
+          </div>
+
+          <div class="modal fade" id="modalprojet3" tabindex="-1" role="dialog" aria-labelledby="modalProjet1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content bg-secondary text-white">
+                <div class="card-container">
+                  <span class="close"><a  data-toggle="modal"
+                    data-target="#modalprojet3"><i class="fas fa-times-circle"></i></a></span>
+                  <div class="project-demo mb-3"></div>
+                  
+                  <h3>Projet 3 <a href="https://github.com"><i class="fab fa-github"></i></a></h3>
+                  <h6>API</h6>
+                  <div class="scrollable-content mb-3 mt-3">
+                  <p>User interface designer and <br/> front-end developer User interface designer and <br/> front-end developerUser interface designer and <br/> front-end developerUser interface designer and <br/> front-end developerUser interface designer and <br/> front-end developerUser interface designer and <br/> front-end developerUser interface designer and <br/> front-end developer</p>
+                  </div>
+                
+                  <div class="skills text-secondary">
+                    <h6>Skills</h6>
+                    <ul>
+                      <li>UI / UX</li>
+                      <li>Front End Development</li>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                      <li>React</li>
+                      <li>Node</li>
+                    </ul>
+                  </div>
+                  
+                </div>
+                
+              </div>
             </div>
           </div>
         </div>

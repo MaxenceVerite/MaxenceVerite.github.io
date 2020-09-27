@@ -4336,6 +4336,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
+
   list-style: none;
 }
 .navbar-nav .nav-link {
@@ -10535,6 +10536,28 @@ a.text-dark:focus {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
 }
+
+@-webkit-keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.blink {
+  text-decoration: blink;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+}
+
+.pronom {
+  font-size: 0.7em;
+}
+
 #mainNav .navbar-brand {
   color: #fdfffc;
 }
@@ -10647,7 +10670,98 @@ a.text-dark:focus {
   font-size: 1.5rem;
 }
 
-.mail-hover:hover {
+.card-container {
+  background-color: #011627;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #b3b8cd;
+  position: relative;
+  width: 500px;
+  height: 700px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.card-container .close {
+  color: #f71735;
+  background-color: transparent;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.card-container .project-demo {
+  background-image: url("./img/portfolio/thumbnails/project-mock-thumbnail.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+.card-container .scrollable-content {
+  overflow-y: auto;
+  max-height: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.card-container .scrollable-content::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+.card-container .scrollable-content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #0b1f30;
+}
+
+.card-container .scrollable-content::-webkit-scrollbar-thumb {
+  background-color: #ff9f1c;
+  outline: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.card-container .skills {
+  position: absolute;
+  bottom: 30px;
+  background-color: #fdfffc;
+  text-align: left;
+  padding: 15px;
+  margin-top: 30px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+}
+
+.card-container .skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-container .skills ul li {
+  border: 1px solid #042138;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 7px 7px 0;
+  padding: 7px;
+}
+
+.card-container .skills ul li.skill {
+  border: 1px solid #f71735;
+}
+
+.card-container .skills ul li.tech {
+  border: 1px solid #41ead4;
+}
+
+.card-container .skills ul li.tool {
+  border: 1px solid #ff9f1c;
+}
+
+.card-container .skills ul li.softskill {
+  border: 1px solid #0b1f30;
 }
 
 .portfolio-modal .portfolio-modal-title {
@@ -10659,16 +10773,6 @@ a.text-dark:focus {
     font-size: 3rem;
     line-height: 2.5rem;
   }
-}
-.portfolio-modal .close {
-  position: absolute;
-  z-index: 1;
-  right: 1.5rem;
-  top: 1rem;
-  font-size: 3rem;
-  line-height: 3rem;
-  color: #ff9f1c;
-  opacity: 1;
 }
 
 #contactForm {
