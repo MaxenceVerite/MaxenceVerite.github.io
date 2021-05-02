@@ -10492,10 +10492,26 @@ a.text-dark:focus {
 }
 
 .card-container .project-demo {
-  background-image: url("./img/portfolio/thumbnails/project-mock-thumbnail.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
+  background-position: center;
+}
+
+#modalprojet1 .card-container .project-demo {
+  background-image: url("./img/portfolio/thumbnails/thumb-queeez.png");
+}
+
+#modalprojet2 .card-container .project-demo {
+  background-image: url("./img/portfolio/thumbnails/thumb-factsAPI.png");
+}
+
+#modalprojet3 .card-container .project-demo {
+  background-image: url("./img/portfolio/thumbnails/thumb-factsBackOffice.png");
+}
+
+#modalprojet4 .card-container .project-demo {
+  background-image: url("./img/portfolio/thumbnails/thumb-timedquizzapi.png");
 }
 
 .card-container .scrollable-content {
@@ -10527,6 +10543,7 @@ a.text-dark:focus {
   text-align: left;
   padding: 15px;
   margin-top: 30px;
+  width: 100%;
   box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
 }
 
