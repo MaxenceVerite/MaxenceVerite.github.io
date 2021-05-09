@@ -11226,7 +11226,7 @@ form .row:first-child .floating-label-form-group {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 960px) {
   .main-timeline6 .timeline:last-child,
   .main-timeline6 .timeline:nth-child(even),
   .main-timeline6 .timeline:nth-child(odd) {
@@ -11275,4 +11275,9 @@ form .row:first-child .floating-label-form-group {
   .main-timeline6 .timeline:nth-child(4n) .content-inner:before {
     border-left-color: #92070e;
   }
+}
+
+.techbook {
+  max-width: 250px;
+  max-height: 400px;
 }
