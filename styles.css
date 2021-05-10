@@ -9915,6 +9915,10 @@ button.bg-dark:focus {
   text-align: justify !important;
 }
 
+.text-blue {
+  color: #2ec4b6 !important;
+}
+
 .text-wrap {
   white-space: normal !important;
 }
@@ -10514,6 +10518,10 @@ a.text-dark:focus {
   background-image: url("./img/portfolio/thumbnails/thumb-timedquizzapi.png");
 }
 
+#modalprojet5 .card-container .project-demo {
+  background-image: url("./img/portfolio/thumbnails/thumb-portfolio.png");
+}
+
 .card-container .scrollable-content {
   overflow-y: auto;
   max-height: 200px;
@@ -10537,12 +10545,11 @@ a.text-dark:focus {
 }
 
 .card-container .skills {
-  position: absolute;
-  bottom: 30px;
   background-color: #fdfffc;
   text-align: left;
   padding: 15px;
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-bottom: 5px;
   width: 100%;
   box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
 }
